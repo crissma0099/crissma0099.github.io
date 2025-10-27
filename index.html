@@ -1,3 +1,4 @@
+este es mi codigo esta todo bien:
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -71,11 +72,25 @@
     color: var(--muted);
     margin-top: 8px;
   }
+.skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill {
+      background: #f1f6ff;
+      border: 1px solid #e6eefc;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #123;
+    }
 
-  .section {
-    margin-bottom: 25px;
-  }
-  .section h3 {
+  .side-section { margin-bottom: 18px; }
+    .label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+  .section h2 {
     color: var(--accent);
     font-size: 15px;
     text-transform: uppercase;
@@ -163,27 +178,42 @@
       </div>
 
       <div>
-        <div class="section">
-          <h3>Habilidades Técnicas</h3>
-          <ul>
-            <li>Lenguajes: C#, C++, Python, HTML, CSS, JavaScript</li>
-            <li>Bases de datos: SQL Server</li>
-            <li>Control de versiones: Git</li>
-            <li>Herramientas de diseño: Canva</li>
-            <li>Ofimática: Excel (fórmulas y análisis de datos)</li>
-            <li>Hardware y software: Mantenimiento y resolución de problemas</li>
-          </ul>
-        </div>
+        <section class="section">
+              <h3>Proyectos & Experiencia</h3>
+              <div class="project">
+                <strong>Proyecto de Sistema en C#</strong>
+                <div class="item">Desarrollo de una aplicación básica para gestión.</div>
+              </div>
+              <div class="project">
+                <strong>Sitio web personal</strong>
+                <div class="item">Creación de un sitio usando HTML, CSS y JavaScript.</div>
+              </div>
+              <div class="project">
+                <strong>Gestión de bases de datos (SQL Server)</strong>
+                <div class="item">Diseño de tablas y consultas en proyectos universitarios.</div>
+              </div>
+              <div class="project">
+                <strong>Scripts en Python</strong>
+                <div class="item">Automatización de tareas y análisis de datos con scripts sencillos.</div>
+              </div>
+            </section>
 
-        <div class="section">
-          <h3>Proyectos y Experiencia</h3>
-          <ul>
-            <li>Proyecto de Sistema en C#: Aplicación básica para gestión.</li>
-            <li>Sitio web personal: Creado con HTML, CSS y JavaScript.</li>
-            <li>Gestión de bases de datos: Consultas en SQL Server.</li>
-            <li>Scripts en Python: Automatización y análisis de datos.</li>
-          </ul>
-        </div>
+            <section class="section">
+              <h3>Habilidades Técnicas</h3>
+              <div class="skills">
+                <div class="skill">C#</div>
+                <div class="skill">C++</div>
+                <div class="skill">Python</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">SQL Server</div>
+                <div class="skill">Git</div>
+                <div class="skill">Canva</div>
+                <div class="skill">Excel (fórmulas)</div>
+                <div class="skill">Mantenimiento HW/SW</div>
+              </div>
+            </section>
 
         <div class="section">
           <h3>Habilidades Blandas</h3>
@@ -203,3 +233,4 @@
   </div>
 </body>
 </html>
+
